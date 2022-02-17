@@ -11,14 +11,16 @@ const characters = text.split("").map((char) => {
     return span;
 });
 
-const firstcharacter = characters[0];
-firstcharacter.classList.add("start");
+const cursorCharacter = characters[0];
+cursorCharacter.classList.add("cursor");
 
 document.addEventListener("keydown", ({ key }) => {
     console.log(key);
-    if (key === firstcharacter.innerText) {
+    if (key === cursorCharacter.innerText) {
         // nadat je de correcte key getypt
-        firstcharacter.classList.remove("start")
-        firstcharacter.classList.add("done")
+        cursorCharacter.classList.remove("cursor")
+        cursorCharacter.classList.add("done")
+        cursorCharacter = character[++cursorIndex];
+        
     }
     });    
