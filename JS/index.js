@@ -18,9 +18,9 @@ document.addEventListener("keydown", ({ key }) => {
     console.log(key);
     if (key === cursorCharacter.innerText) {
         // nadat je de correcte key getypt
-        cursorCharacter.classList.remove("cursor")
-        cursorCharacter.classList.add("done")
+        cursorCharacter.classList.remove("cursor");
+        cursorCharacter.classList.add("done");
         cursorCharacter = character[++cursorIndex];
-        
+        cursorCharacter.classList.add("cursor");
     }
     });    

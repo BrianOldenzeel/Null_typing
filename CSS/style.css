@@ -1,3 +1,7 @@
 .cursor {
   color: aqua;
 }
+
+.done {
+  color: gray;
+}
