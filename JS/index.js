@@ -11,7 +11,8 @@ const characters = text.split("").map((char) => {
     return span;
 });
 
-const cursorCharacter = characters[0];
+const cursorIndex = 0;
+const cursorCharacter = characters[cursorIndex];
 cursorCharacter.classList.add("cursor");
 
 document.addEventListener("keydown", ({ key }) => {
@@ -23,4 +24,4 @@ document.addEventListener("keydown", ({ key }) => {
         cursorCharacter = character[++cursorIndex];
         cursorCharacter.classList.add("cursor");
     }
-    });    
+    });
