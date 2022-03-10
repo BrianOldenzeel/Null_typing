@@ -5,3 +5,11 @@
 .done {
   color: gray;
 }
+
+#typing {
+  text-align: center;
+}
+
+#WPM {
+  text-align: center;
+}
