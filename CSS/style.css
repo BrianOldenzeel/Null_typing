@@ -27,25 +27,63 @@ body {
   color: gray;
 }
 
-#typing {
-  text-align: justify;
+.typing {
   margin-left: 350px;
   margin-right: 350px;
+  margin-top: 250px;
+  border: 0.1em solid black;
+  border-radius: 13px;
+  height: 190px;
+}
+#typing {
+  text-align: justify;
+  margin: 20px;
 }
 
 #typing span {
   letter-spacing: 0.5px;
+  word-spacing: 3px;
+  font-size: 26px;
 }
 
 #WPM {
   text-align: center;
 }
 
-#restart {
+.restart {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#restart button {
+#restart {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.credits {
+  margin-top: 150px;
+}
+
+.credits span {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits img {
+  height: 20px;
 }
