@@ -1,5 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
 .cursor {
-  color: cyan;
+  color: orange;
+  border-left: 0.1em solid black;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .done {
@@ -7,7 +28,13 @@
 }
 
 #typing {
-  text-align: center;
+  text-align: justify;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+#typing span {
+  letter-spacing: 0.5px;
 }
 
 #WPM {
@@ -18,4 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#restart button {
 }

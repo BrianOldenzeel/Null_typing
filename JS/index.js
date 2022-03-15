@@ -16,7 +16,7 @@ const paragraph = [
 ];
 
 // de text die hij random uit de array hier boven pakt
-const text = paragraph[parseInt(Math.random() * paragraph.length)];
+const text = paragraph[Math.floor(Math.random() * paragraph.length)];
 
 function startgame() {
     typingDiv.innerHTML = "";
