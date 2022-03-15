@@ -1,5 +1,5 @@
 .cursor {
-  color: aqua;
+  color: cyan;
 }
 
 .done {
@@ -12,4 +12,10 @@
 
 #WPM {
   text-align: center;
+}
+
+#restart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
