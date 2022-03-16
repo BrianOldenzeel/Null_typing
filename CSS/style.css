@@ -5,6 +5,10 @@
 }
 
 body {
+  background-color: #fbfbf8;
+}
+
+#wpm {
 }
 
 .cursor {
@@ -24,7 +28,7 @@ body {
 }
 
 .done {
-  color: gray;
+  color: black;
 }
 
 .typing {
@@ -38,6 +42,7 @@ body {
 #typing {
   text-align: justify;
   margin: 20px;
+  color: grey;
 }
 
 #typing span {

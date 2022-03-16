@@ -48,9 +48,9 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         // nadat je de correcte key getypt
         cursorCharacter.classList.remove("cursor");
         cursorCharacter.classList.add("done");
-        cursorCharacter = characters[++cursorIndex];
-        
+        cursorCharacter = characters[++cursorIndex];        
     }
+    
     // WPM display
     if (cursorIndex >= characters.length) {
         endTime = new Date();
