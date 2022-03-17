@@ -12,6 +12,7 @@ body {
 }
 
 #wpm {
+  
 }
 
 .cursor {
@@ -50,8 +51,8 @@ body {
 
 #typing span {
   letter-spacing: 0.5px;
-  word-spacing: 1px;
-  font-size: 26px;
+  word-spacing: 3px;
+  font-size: 22px;
 }
 
 #WPM {

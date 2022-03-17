@@ -5,7 +5,7 @@ const paragraph = [
     `You are what you are and you are where you are because of what has gone into your mind. You change what you are and you change where you are by changing what goes into your mind.`,
     `Perhaps if you know you are insane then you are not insane.`,
     `The mark of the immature man is that he wants to die nobly for a cause, while the mark of the mature man is that he wants to live humbly for one.`,
-    `Some people pass through your life and you never think about them again. Some you think about and wonder what ever happened to them. Some you wonder if they ever wonder what happened to you. And then there are some you wish you never had to think about again. But you do.`,
+    `Some people pass through your life and you never think about them again. Some you think about and wonder what ever happened to them. Some you wonder if they ever wonder what happened to you. And then there are some you wish you never had to think about again.`,
     `Doubting someone is not necessarily a bad thing, because it is something that you do to get to know the person better. What is really bad is not being concerned at all.`,
     `I used to dread getting older because I thought I would not be able to do all the things I wanted to do, but now that Im older I find that I dont want to do them.`,
     `I hope it is true that a man can die and yet not only live in others but give them life, and not only life but that great consciousness of life.`,
