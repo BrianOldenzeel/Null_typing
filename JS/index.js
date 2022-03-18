@@ -1,4 +1,5 @@
 const typingDiv = document.getElementById("typing")
+const statsDiv = document.getElementById("WPM")
 
 const paragraph = [
     `the function of a paragraph is to mark a pause setting the paragraph apart from what precedes it if a paragraph is preceded by a title or subhead the indent is superfluous and can therefore be omitted`,
@@ -15,10 +16,12 @@ const paragraph = [
 
 ];
 function startgame() {
+//haalt de inhoud van de text en de wpm weg
+typingDiv.innerHTML = "";
+statsDiv.innerHTML = "";
+
 // de text die hij random uit de array hier boven pakt
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
-
-typingDiv.innerHTML = "";
 
 // split alle characters in ieder zijn eigen "span"
 const characters = text.split("").map((char) => {
