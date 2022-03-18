@@ -53,7 +53,7 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         cursorCharacter = characters[++cursorIndex];        
     }
     
-    // WPM display
+    // WPM Berekening
     if (cursorIndex >= characters.length) {
         endTime = new Date();
         const tijd = endTime - startTime;
@@ -61,14 +61,10 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         const number_of_words = text.split(' ').length;
         const wps = number_of_words / seconds;
         const wpm = Math.floor(wps * 60.0);
-        document.getElementById('WPM').innerText = `wpm = ${wpm}`
-        document.removeEventListener(keydown, keylistener);        
+
+        // hier display hij de WPM 
+        document.getElementById('WPM').innerText = `wpm = ${wpm}`       
     }
     cursorCharacter.classList.add("cursor");
     });
     }
-
-    //reload page om game opnieuw te starten
-    function reload(){
-        window.location.reload();
-    }   
