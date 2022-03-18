@@ -1,6 +1,5 @@
 const typingDiv = document.getElementById("typing")
 const statsDiv = document.getElementById("WPM")
-
 const paragraph = [
     `the function of a paragraph is to mark a pause setting the paragraph apart from what precedes it if a paragraph is preceded by a title or subhead the indent is superfluous and can therefore be omitted`,
     `You are what you are and you are where you are because of what has gone into your mind. You change what you are and you change where you are by changing what goes into your mind.`,
@@ -15,6 +14,8 @@ const paragraph = [
     `Humans need to practice what they are learning a good deal before they master it. Furthermore, they tend to lose a good deal of their learning when they cease to practice the skills associated with this learning in their daily lives.`,
 
 ];
+
+
 function startgame() {
 //haalt de inhoud van de text en de wpm weg
 typingDiv.innerHTML = "";
@@ -46,8 +47,8 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         startTime = new Date();
     }
 
+    // als je de corecte key ge geklikt
     if (key === cursorCharacter.innerText) {
-        // nadat je de correcte key getypt
         cursorCharacter.classList.remove("cursor");
         cursorCharacter.classList.add("done");
         cursorCharacter = characters[++cursorIndex];        
