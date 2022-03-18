@@ -56,8 +56,9 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 30%;
-  left: 47.3%;
+  top: 27%;
+  left: 44.7%;
+  font-size: 30px;
 }
 
 .restart {
