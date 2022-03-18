@@ -14,12 +14,11 @@ const paragraph = [
     `Humans need to practice what they are learning a good deal before they master it. Furthermore, they tend to lose a good deal of their learning when they cease to practice the skills associated with this learning in their daily lives.`,
 
 ];
-
+function startgame() {
 // de text die hij random uit de array hier boven pakt
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
 
-function startgame() {
-    typingDiv.innerHTML = "";
+typingDiv.innerHTML = "";
 
 // split alle characters in ieder zijn eigen "span"
 const characters = text.split("").map((char) => {
@@ -60,8 +59,7 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         const wps = number_of_words / seconds;
         const wpm = Math.floor(wps * 60.0);
         document.getElementById('WPM').innerText = `wpm = ${wpm}`
-        document.removeEventListener(keydown, keylistener);
-        
+        document.removeEventListener(keydown, keylistener);        
     }
     cursorCharacter.classList.add("cursor");
     });
