@@ -2,7 +2,7 @@
 
 :root {
   --bg-color: #fbfbf8;
-  --typewriterSpeed: 6s;
+  --typewriterSpeed: 3.5s;
   --typewriterCharacters: 7;
 }
 
@@ -71,10 +71,6 @@ body {
   }
 }
 
-.eerste {
-  color: aqua;
-}
-
 .cursor {
   color: orange;
   border-left: 0.1em solid black;
@@ -113,7 +109,6 @@ body {
   text-align: justify;
   margin: 20px;
   color: grey;
-  position: absolute;
 }
 
 #typing span {
@@ -124,7 +119,7 @@ body {
 #WPM {
   top: 25vh;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .restart {
