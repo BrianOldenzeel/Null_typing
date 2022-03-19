@@ -16,7 +16,11 @@ const paragraph = [
 ];
 
 
+
 function startgame() {
+
+
+
 //haalt de inhoud van de text en de wpm weg is alleen relevant als je opnieuw wilt spelen
 typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
@@ -35,6 +39,7 @@ const characters = text.split("").map((char) => {
 let cursorIndex = 0;
 let cursorCharacter = characters[cursorIndex];
 cursorCharacter.classList.add("cursor");
+
 
 let startTime = null;
 let endTime = null;
