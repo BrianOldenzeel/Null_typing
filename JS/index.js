@@ -19,8 +19,6 @@ const paragraph = [
 
 function startgame() {
 
-
-
 //haalt de inhoud van de text en de wpm weg is alleen relevant als je opnieuw wilt spelen
 typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
