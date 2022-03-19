@@ -1,3 +1,4 @@
+// variablen voor de game
 const typingDiv = document.getElementById("typing")
 const statsDiv = document.getElementById("WPM")
 const paragraph = [
@@ -65,7 +66,6 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         const number_of_words = text.split(' ').length;
         const wps = number_of_words / seconds;
         const wpm = Math.floor(wps * 60.0);
-
         // hier display hij de WPM 
         document.getElementById('WPM').innerText =`wpm = ${wpm}`       
     }
