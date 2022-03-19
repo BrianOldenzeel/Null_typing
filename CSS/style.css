@@ -109,6 +109,7 @@ body {
   text-align: justify;
   margin: 20px;
   color: grey;
+  position: absolute;
 }
 
 #typing span {
