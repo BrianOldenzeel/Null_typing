@@ -55,8 +55,11 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
     if (key === cursorCharacter.innerText) {
         cursorCharacter.classList.remove("cursor");
         cursorCharacter.classList.add("done");
-        cursorCharacter = characters[++cursorIndex];        
-    }
+        cursorCharacter = characters[++cursorIndex];    
+    } /*else if (key !== cursorCharacter.innerText); {
+        cursorCharacter.classList.remove("cursor");
+        cursorCharacter.classList.add("wrong")
+    } */
     
     // WPM Berekening
     if (cursorIndex >= characters.length) {

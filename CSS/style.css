@@ -2,7 +2,7 @@
 
 :root {
   --bg-color: #fbfbf8;
-  --typewriterSpeed: 4s;
+  --typewriterSpeed: 6s;
   --typewriterCharacters: 7;
 }
 
@@ -48,14 +48,14 @@ body {
 .name span::before {
   background: var(--bg-color);
   animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+    steps(var(--typewriterCharacters)) 0.5s forwards;
 }
 
 .name span::after {
   width: 0.125em;
   background: black;
   animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
+      steps(var(--typewriterCharacters)) 0.5s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
@@ -95,6 +95,10 @@ body {
   color: black;
 }
 
+.wronng {
+  color: red;
+}
+
 .typing {
   top: 35vh;
   left: 25%;
@@ -118,13 +122,9 @@ body {
 }
 
 #WPM {
-  position: absolute;
   top: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-size: 30px;
-  width: 100%;
 }
 
 .restart {
