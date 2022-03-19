@@ -1,5 +1,5 @@
-# Speed-Typing-Game
+# Null_Typing
 
-Ik heb een typeracer game gemaakt met HTML, CSS en JS
+Null_typing is a typing game built with HTML, CSS en JS
 
-voor text suggesties mail naar brianoldenzeelportfolio@gmail.com
+For text suggestions and bug reports mail: brianoldenzeelportfolio@gmail.com
