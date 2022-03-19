@@ -34,10 +34,12 @@ body {
 .typing {
   margin-left: 350px;
   margin-right: 350px;
-  margin-top: 250px;
+  top: 40vh;
+  position: absolute;
   border: 0.1em solid black;
   border-radius: 13px;
   height: 190px;
+  width: auto;
 }
 #typing {
   text-align: justify;
@@ -52,23 +54,22 @@ body {
 }
 
 #WPM {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  top: 27%;
-  left: 44.7%;
+  top: 30vh;
+  width: 100%;
+  text-align: center;
   font-size: 30px;
 }
 
 .restart {
-  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #restart {
+  top: 70vh;
+  position: absolute;
   border: none;
   color: gray;
   padding: 15px 30px;
@@ -81,8 +82,11 @@ body {
   color: black;
 }
 
-.credits {
-  margin-top: 130px;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .credits span {

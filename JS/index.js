@@ -17,11 +17,11 @@ const paragraph = [
 
 
 function startgame() {
-//haalt de inhoud van de text en de wpm weg
+//haalt de inhoud van de text en de wpm weg is alleen relevant als je opnieuw wilt spelen
 typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
 
-// de text die hij random uit de array hier boven pakt
+// de text die hij random value uit de array met teskten
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
 
 // split alle characters in ieder zijn eigen "span"
