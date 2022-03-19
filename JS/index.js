@@ -64,8 +64,9 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
         const wpm = Math.floor(wps * 60.0);
 
         // hier display hij de WPM 
-        document.getElementById('WPM').innerText = `wpm = ${wpm}`       
+        document.getElementById('WPM').innerText =`wpm = ${wpm}`       
     }
     cursorCharacter.classList.add("cursor");
+    
     });
     }

@@ -11,8 +11,21 @@ body {
   background-color: #fbfbf8;
 }
 
+.name {
+  font-family: monospace;
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+}
+
+.name h1 {
+  text-align: center;
+}
+
 .cursor {
   color: orange;
+  overflow: hidden;
   border-left: 0.1em solid black;
   animation: blink-caret 0.75s step-end infinite;
 }
@@ -37,13 +50,14 @@ body {
   position: absolute;
   border: 0.1em solid black;
   border-radius: 13px;
-  height: 190px;
+  height: 195px;
   width: 800px;
 }
 #typing {
   text-align: justify;
   margin: 20px;
   color: grey;
+  overflow: hidden;
 }
 
 #typing span {
