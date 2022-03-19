@@ -32,13 +32,13 @@ body {
 }
 
 .typing {
-  margin-left: 350px;
-  margin-right: 350px;
   top: 40vh;
+  left: 50vh;
   position: absolute;
   border: 0.1em solid black;
   border-radius: 13px;
   height: 190px;
+  width: 55%;
 }
 #typing {
   text-align: justify;
@@ -47,7 +47,6 @@ body {
 }
 
 #typing span {
-  letter-spacing: 0.5px;
   word-spacing: 3px;
   font-size: 22px;
 }
@@ -86,13 +85,11 @@ footer {
   bottom: 0;
   width: 100%;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .credits span {
   font-size: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: grey;
 }
 
