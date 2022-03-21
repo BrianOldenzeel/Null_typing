@@ -133,6 +133,10 @@ body {
   color: black;
 }
 
+#restart:active {
+  background-color: rgb(230, 227, 227);
+}
+
 footer {
   position: fixed;
   bottom: 0;
