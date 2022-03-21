@@ -56,7 +56,7 @@ body {
   background: black;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 0.5s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
+    blink 450ms steps(var(--typewriterCharacters)) infinite;
 }
 
 @keyframes typewriter {
