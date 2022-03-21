@@ -102,6 +102,7 @@ body {
 
 #typing span {
   word-spacing: 3px;
+  letter-spacing: 1px;
   font-size: 22px;
 }
 
