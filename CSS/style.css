@@ -72,19 +72,7 @@ body {
 }
 
 .cursor {
-  color: orange;
-  border-left: 0.1em solid black;
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+  border-left: 0.13em solid black;
 }
 
 .done {
