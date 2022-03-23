@@ -72,15 +72,16 @@ body {
 }
 
 .cursor {
-  border-left: 0.13em solid black;
+  border-left: 0.1em solid black;
 }
 
 .done {
   color: black;
 }
 
-.wronng {
-  color: red;
+.wrong {
+  color: white;
+  background-color: rgb(255, 75, 75);
 }
 
 .typing {

@@ -44,7 +44,7 @@ let startTime = null;
 let endTime = null;
 
 // registreert alle key presses
-const keylistener = document.addEventListener("keydown", ({ key }) => {
+const keylistener = document.addEventListener("keypress", ({ key }) => {
     console.log(key);
     // na een key press start de timer
     if (!startTime) {
@@ -53,13 +53,17 @@ const keylistener = document.addEventListener("keydown", ({ key }) => {
 
     // als je de corecte key ge geklikt
     if (key === cursorCharacter.innerText) {
+        cursorCharacter.classList.remove("wrong")
         cursorCharacter.classList.remove("cursor");
         cursorCharacter.classList.add("done");
         cursorCharacter = characters[++cursorIndex];    
-    } /*else if (key !== cursorCharacter.innerText); {
-        cursorCharacter.classList.remove("cursor");
-        cursorCharacter.classList.add("wrong")
-    } */
+    } 
+    
+    // als je de verkeerde key durkt krijgt de letter de class "wrong"
+    else {
+        cursorCharacter.classList.remove("cursor")
+        cursorCharacter.classList.add("wrong");
+    }
     
     // WPM Berekening
     if (cursorIndex >= characters.length) {
