@@ -72,7 +72,7 @@ body {
 }
 
 .cursor {
-  border-left: 0.1em solid black;
+  border-left: 0.12em solid black;
 }
 
 .done {
@@ -81,7 +81,7 @@ body {
 
 .wrong {
   color: white;
-  background-color: rgb(255, 75, 75);
+  background-color: red;
 }
 
 .typing {
