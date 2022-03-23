@@ -80,8 +80,7 @@ body {
 }
 
 .wrong {
-  color: white;
-  background-color: red;
+  color: red;
 }
 
 .typing {
