@@ -57,7 +57,6 @@ const keylistener = document.addEventListener("keypress", ({ key }) => {
         cursorCharacter.classList.add("done");
         cursorCharacter = characters[++cursorIndex];    
     } 
-    
     // als je de verkeerde key durkt krijgt de letter de class "wrong"
     else {
         cursorCharacter.classList.remove("cursor")
