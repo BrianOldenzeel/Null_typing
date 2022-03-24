@@ -64,7 +64,7 @@ const keylistener = document.addEventListener("keypress", ({ key }) => {
     }
     
     // WPM Berekening
-    if (cursorIndex >= characters.length) {
+    if (cursorIndex === characters.length) {
         endTime = new Date();
         const tijd = endTime - startTime;
         const seconds = tijd / 1000;
