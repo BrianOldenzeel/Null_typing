@@ -82,6 +82,7 @@ body {
 .wrong {
   color: white;
   background-color: red;
+  border-left: 0.11em solid red;
 }
 
 .typing {
