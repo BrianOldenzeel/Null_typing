@@ -90,7 +90,7 @@ body {
   position: absolute;
   border: 0.1em solid black;
   border-radius: 13px;
-  height: 245px;
+  height: 215px;
   width: 50%;
 }
 
@@ -102,8 +102,7 @@ body {
 }
 
 #typing span {
-  word-spacing: 1px;
-  letter-spacing: 3px;
+  word-spacing: 2px;
   font-size: 22px;
 }
 
