@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 :root {
-  --bg-color: #fbfbf8;
+  --bg-color: white;
   --typewriterSpeed: 3s;
   --typewriterCharacters: 7;
 }
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #fbfbf8;
+  background-color: white;
 }
 
 .name {

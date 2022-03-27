@@ -1,6 +1,8 @@
 // variablen voor de game
 const typingDiv = document.getElementById("typing")
 const statsDiv = document.getElementById("WPM")
+const wrongletter2 = document.getElementById("fail")
+const wrongletter = []
 const paragraph = [
     `the function of a paragraph is to mark a pause setting the paragraph apart from what precedes it if a paragraph is preceded by a title or subhead the indent is superfluous and can therefore be omitted`,
     `You are what you are and you are where you are because of what has gone into your mind. You change what you are and you change where you are by changing what goes into your mind.`,
@@ -22,6 +24,8 @@ function startgame() {
 //haalt de inhoud van de text en de wpm weg is alleen relevant als je opnieuw wilt spelen
 typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
+wrongletter2.innerHTML ="";
+wrongletter.length = 0
 
 // de text die hij random value uit de array met teskten
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
@@ -61,6 +65,7 @@ const keylistener = document.addEventListener("keypress", ({ key }) => {
     else {
         cursorCharacter.classList.remove("cursor")
         cursorCharacter.classList.add("wrong");
+        wrongletter.push("1")
     }
     
     // WPM Berekening
@@ -72,7 +77,9 @@ const keylistener = document.addEventListener("keypress", ({ key }) => {
         const wps = number_of_words / seconds;
         const wpm = Math.floor(wps * 60.0);
         // hier display hij de WPM 
-        document.getElementById('WPM').innerText =`${wpm} wpm`       
+        document.getElementById('WPM').innerText =`${wpm} wpm`
+        const number_of_fail = wrongletter.length
+        document.getElementById('fail').innerText =`${number_of_fail}`     
     }
     cursorCharacter.classList.add("cursor");
     
