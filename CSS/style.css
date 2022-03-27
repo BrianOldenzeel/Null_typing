@@ -82,11 +82,10 @@ body {
 .wrong {
   color: white;
   background-color: red;
-  border-left: 0.11em solid red;
 }
 
 .typing {
-  top: 35vh;
+  top: 40vh;
   left: 25%;
   position: absolute;
   border: 0.1em solid black;
@@ -111,6 +110,11 @@ body {
   top: 25vh;
   text-align: center;
   font-size: 30px;
+}
+
+#fail {
+  text-align: center;
+  font-size: 22px;
 }
 
 .restart {
