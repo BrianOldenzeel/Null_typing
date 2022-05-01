@@ -2,7 +2,7 @@
 const typingDiv = document.getElementById("typing")
 const statsDiv = document.getElementById("WPM")
 const accuracy1 = document.getElementById("fail")
-const accuracy2 = []
+let accuracy2 = "0"
 const paragraph = [
     `the function of a paragraph is to mark a pause setting the paragraph apart from what precedes it if a paragraph is preceded by a title or subhead the indent is superfluous and can therefore be omitted`,
     `You are what you are and you are where you are because of what has gone into your mind. You change what you are and you change where you are by changing what goes into your mind.`,
@@ -24,9 +24,8 @@ function startgame() {
 //haalt de inhoud van de text en de wpm weg is alleen relevant als je opnieuw wilt spelen
 typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
-accuracy1.innerHTML ="";
-accuracy2.length = 0
-
+accuracy1.innerHTML = "";
+accuracy2 = "0";
 // de text die hij random value uit de array met teskten
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
 
@@ -65,7 +64,7 @@ document.addEventListener("keypress", ({ key }) => {
     else {
         cursorCharacter.classList.remove("cursor")
         cursorCharacter.classList.add("wrong");
-        accuracy2.push("1")
+        [++accuracy2]
     }
     
     // WPM Berekening
@@ -78,10 +77,11 @@ document.addEventListener("keypress", ({ key }) => {
         const wpm = Math.floor(wps * 60.0);
         // hier display hij de WPM en accuracy
         document.getElementById('WPM').innerText =`${wpm} wpm`;
-        const number_of_right = text.length - accuracy2.length;
-        const number_of_characters = text.length;
+        const number_of_right = text.length - accuracy2;
+        const number_of_characters = text.split('').length;
         const accuracy = Math.floor(number_of_right / number_of_characters * 100);
-        document.getElementById('fail').innerText =`You're Accuracy is ${accuracy}%`; 
+        document.getElementById('fail').innerText =`You're Accuracy is ${accuracy}%`;
+        return; 
     }
     cursorCharacter.classList.add("cursor");
     
