@@ -26,6 +26,7 @@ typingDiv.innerHTML = "";
 statsDiv.innerHTML = "";
 accuracy1.innerHTML = "";
 accuracy2 = "0";
+
 // de text die hij random value uit de array met teskten
 const text = paragraph[Math.floor(Math.random() * paragraph.length)];
 
@@ -75,6 +76,7 @@ document.addEventListener("keypress", ({ key }) => {
         const number_of_words = text.split(' ').length;
         const wps = number_of_words / seconds;
         const wpm = Math.floor(wps * 60.0);
+
         // hier display hij de WPM en accuracy
         document.getElementById('WPM').innerText =`${wpm} wpm`;
         const number_of_right = text.length - accuracy2;
