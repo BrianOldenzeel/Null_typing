@@ -15,6 +15,7 @@ const paragraph = [
     `For centuries, the battle of morality was fought between those who claimed that your life belongs to God and those who claimed that it belongs to your neighbors. And no one came to say that your life belongs to you and that the good is to live it.`,
     `In the casino, the cardinal rule is to keep them playing and to keep them coming back. The longer they play, the more they lose, and in the end, we get it all. Running a casino is like robbing a bank with no cops around.`,
     `Humans need to practice what they are learning a good deal before they master it. Furthermore, they tend to lose a good deal of their learning when they cease to practice the skills associated with this learning in their daily lives.`,
+    `Is een bosbes een Basbus`,
 
 ];
 
