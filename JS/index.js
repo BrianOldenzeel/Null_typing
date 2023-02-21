@@ -82,7 +82,7 @@ document.addEventListener("keypress", ({ key }) => {
         document.getElementById('WPM').innerText =`${wpm} wpm`;
         const number_of_right = text.length - accuracy2;
         const number_of_characters = text.split('').length;
-        const accuracy = Math.floor(number_of_right / number_of_characters * 100);
+        let accuracy = Math.floor(number_of_right / number_of_characters * 100);
         document.getElementById('fail').innerText =`You're Accuracy is ${accuracy}%`;
         return; 
     }
